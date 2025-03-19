@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/23.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.guiex1.controller.GroupController">
+   <children>
+      <AnchorPane prefHeight="400.0" prefWidth="593.0">
+         <children>
+            <TableView fx:id="tableView1" layoutX="1.0" layoutY="54.0" prefHeight="234.0" prefWidth="296.0">
+              <columns>
+                <TableColumn fx:id="columnTable11" prefWidth="143.33331298828125" text="First Name" />
+                <TableColumn fx:id="columnTable12" prefWidth="150.66665649414062" text="Last Name" />
+              </columns>
+            </TableView>
+            <TableView fx:id="tableView2" layoutX="297.0" layoutY="54.0" prefHeight="234.0" prefWidth="296.0">
+              <columns>
+                <TableColumn fx:id="columnTable21" prefWidth="152.66668701171875" text="First Name" />
+                <TableColumn fx:id="columnTable22" prefWidth="142.0" text="Last Name" />
+              </columns>
+            </TableView>
+            <Label layoutX="33.0" layoutY="17.0" prefHeight="23.0" prefWidth="251.0" text="Select friends to send message:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <Label layoutX="298.0" layoutY="17.0" prefHeight="23.0" prefWidth="281.0" text="Friends you are sending the message to:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField fx:id="messageField" layoutX="43.0" layoutY="331.0" prefHeight="25.0" prefWidth="373.0" />
+            <Button layoutX="445.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleSend" prefHeight="25.0" prefWidth="131.0" text="Send" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
